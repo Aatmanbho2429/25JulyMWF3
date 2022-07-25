@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: url(images/2587606.jpg)no-repeat center center / cover;
+        }
+
+        .bg-layer {
+            height: inherit;
+            background: linear-gradient(#724e8edb, #533868cf);
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box {
+            width: 35%;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .card-header{
+            background-color: #4f4487;
+            padding: 20px;
+            color: white;
+            font-size: 22px;
+        }
+        .card-body{
+            background-color: white;
+            padding: 30px 10px;
+        }
+        .card-body .inp{
+            border: 0;
+            border-bottom: 1px solid grey;
+            width: 75%;
+            display: block;
+            margin: 0 auto;
+            padding: 5px 25px;
+            margin: 10px 0;
+        }
+        .inp:focus{
+            border: 0;
+            border-bottom: 1px solid grey;
+            outline: 0;
+        }
+        .fa-cust-user{
+            position: absolute;
+            left: 25px;
+            top: 15px;
+            color: #7261c9e6;
+        }
+        .posi-rele{
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="bg-layer">
+        <div class="container">
+            <div class="row">
+                <div class="box">
+                    <div class="card-header">
+                        Your Logo
+                    </div>
+                    <div class="card-body">
+                        <form action="serverpage.php" method="post">
+                            <div class="row posi-rele">
+                                <i class="fa fa-solid fa-user fa-cust-user"></i>
+                                <input type="text" placeholder="Enter User Name" class="inp" name="" id="">
+                            </div>
+                            <div class="row posi-rele">
+                                <i class="fa-solid fa-lock fa-cust-user"></i>
+                                <input type="text" placeholder="Enter Password" class="inp" name="" id="">
+                            </div>
+                            <div class="row">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-google-plus"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="row posi-rele">
+                                <input type="submit" class="inp" name="" id="">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card-header">
+                        Registration
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #34b1e7;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .row{
+            display: flex;
+        }
+        .col-50{
+            width: 50%;
+            margin: 30px;
+            padding: 20px;
+            box-shadow: 2px 2px 15px grey;
+        }
+        .bg{
+            background-color: white;
+        }
+        input{
+            width: 93%;
+            padding: 7px;
+            margin: 7px;
+            border: 1px solid #34b1e7;
+            border-radius: 5px;
+        }
+        .social {
+            text-align: center;
+            color: white;
+        }
+        .social span{
+            padding: 10px 30px;
+            background-color: #34b1e7;
+            display: inline-block;
+            width: 40%;
+            border-radius: 5px;
+        }
+        .social .fb{
+            background-color: #34b1e7;
+        }
+        .social .google{
+            background-color: #d48039;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div>test</div>
+    <div>test</div>
+    <div>test</div>
+    <div>test</div>
+    <span>test</span>
+    <span>test</span>
+    <span>test</span>
+    <span>test</span> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-50 bg">
+                <form method="post">
+                    <div class="social">
+                        <span class="fb"><i class="fa-brands fa-facebook-f"></i></span>
+                        <span class="google"><i class="fa-brands fa-google"></i></span>          
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email" name="" id="">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Passowrd" name="" id="">
+                    </div>
+                </form>
+            </div>
+            <div class="col-50 bg">
+                <form method="post">
+                    <input type="text" name="" id="">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
