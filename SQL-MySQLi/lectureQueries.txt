@@ -1,0 +1,26 @@
+
+CREATE DATABASE databasename
+
+Create table tablename(
+clmname datatype(size) constraint(optional),
+clmname datatype(size)
+)
+INSERT INTO users VALUES (2,"test","112","mail@mail.com","Male","9879879877")
+
+
+ALTER TABLE users ADD userid int(10) PRIMARY KEY;
+
+
+ALTER TABLE `users` ADD `email` VARCHAR(50) NOT NULL FIRST;
+
+ALTER TABLE `users` CHANGE `email` email_id varchar(20);
+
+ALTER TABLE `users` DROP email_id;
+
+TRUNCATE TABLE users;
+
+
+INSERT INTO `users`(`username`) VALUES ("test"),("check"),("asd");
+
+
+DELETE FROM users;
