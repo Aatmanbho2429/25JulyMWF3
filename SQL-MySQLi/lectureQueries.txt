@@ -23,4 +23,23 @@ TRUNCATE TABLE users;
 INSERT INTO `users`(`username`) VALUES ("test"),("check"),("asd");
 
 
+
 DELETE FROM users;
+
+
+
+ALTER TABLE `users` CHANGE `city_id` `city_id` INT(10) NULL DEFAULT NULL COMMENT 'reference from city table';
+
+
+
+SELECT * FROM `tblstudents` WHERE studentname="Sarita"
+
+
+SELECT * FROM `tblstudents` WHERE `StudentName` LIKE "%kumar%"
+
+
+SELECT * FROM `tblstudents` WHERE `StudentName` LIKE "kumar"
+
+SELECT * FROM `tblstudents` WHERE `StudentName` LIKE "A%"
+
+SELECT * FROM `tblstudents` WHERE `StudentName` LIKE "VIJA_"
