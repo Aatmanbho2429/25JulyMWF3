@@ -43,3 +43,9 @@ SELECT * FROM `tblstudents` WHERE `StudentName` LIKE "kumar"
 SELECT * FROM `tblstudents` WHERE `StudentName` LIKE "A%"
 
 SELECT * FROM `tblstudents` WHERE `StudentName` LIKE "VIJA_"
+
+
+
+SELECT tblstudents.StudentId,StudentName,SUM(marks) as TotalMarks, MIN(marks) as MinMarks,MAX(marks) as MaxMarks FROM `tblresult` 
+JOIN tblstudents 
+ON tblstudents.StudentId = tblresult.StudentId GROUP BY tblresult.StudentId
